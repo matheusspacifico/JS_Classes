@@ -1,0 +1,12 @@
+x = "teste muito foda";
+console.log(x);
+x = 10;
+console.log(x);
+x = true;
+console.log(x);
+let nome;
+console.log(nome);
+y = 0.1 + 0.1 + 0.1 + "jorge";
+console.log(y);
+const pi = 3.14;
+console.log(pi);
