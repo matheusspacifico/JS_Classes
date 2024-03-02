@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+</head>
+<body>
+    <!-- <button>Fazer algo</button>
+    <input type="text" name="conteudo">
+    <div id="resultado">
+
+    </div>
+    <script>
+        
+    </script> -->
+    <main>
+        <section>
+            <article>
+                <div>
+                    <button onclick="dizerOla()">Origem</button> <!-- not the recommended way to do this -->
+                </div>
+            </article>
+        </section>
+        <section>
+            <!-- .... -->
+        </section>
+        <section>
+            <h1>Quero achar esse mano</h1>
+        </section>
+    </main>
+    <script>
+        let button = document.querySelector("button");
+        let div = button.parentElement;
+        let article = div.parentElement;
+        let sectionOrigem = article.parentElement;
+
+        let sectionDestino = sectionOrigem.nextElementSibling.nextElementSibling;
+        console.log(sectionDestino);
+
+        function dizerOla(){
+            alert("Ola");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<div>
+    <button id="teste">A</button>
+    <button class="preto azul">B</button>
+    <button class="azul" id="roxo">C</button> 
+    <button>D</button>
+    <button id="abc">E</button>
+    <button id="def">F</button>
+</div>
+
+document.querySelector(".azul") -> B
+document.querySelectorAll(".azul") -> [B, C]
+document.getElementsByTagName("button") -> [A, B, C, D, E, F]
+document.getElementsByClassName("preto") -> [B]
+document.getElementById("abc") -> E
+document.querySelector("button") -> A
+document.querySelectorAll("[class]") -> [B, C]
+document.querySelector("[class=azul]") -> C
+document.querySelectorAll("button")[3] -> D
+document.getElementsByClassName("azul")[1] C
