@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="resultado">
+        <ul>
+            <li><span>1</span><button>Receba</button></li>
+            <li><span>2</span><button>Receba</button></li>
+            <li><span>3</span><button>Receba</button></li>
+            <li><span>4</span><button>Receba</button></li>
+            <li><span>5</span><button>Receba</button></li>
+            <li><span>6</span><button>Receba</button></li>
+        </ul>
+    </div>
+    <script>
+        function dizerOla(e) {
+            let alvo = e.target.previousElementSibling;
+            let numero = alvo.textContent;
+            console.log(numero);
+        }
+
+        let btns = document.querySelectorAll("button");
+        for (let btn of btns) {
+            btn.addEventListener("click", dizerOla);
+        }
+    </script>
+</body>
+
+</html>
