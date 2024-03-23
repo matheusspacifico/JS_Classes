@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+
+    <main>
+
+    </main>
+
+    <script>
+        let dados = [
+                    {
+                        "nome": "José da Silva Emanuel",
+                        "idade": 21,
+                        "matriculado": true,
+                        "disciplinas": [
+                            {
+                                "nome": "PRW1",
+                                "professor": "Tiago"
+                            },
+                            {
+                                "nome": "APR2",
+                                "professor": "Carlao"
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Maria da Silva Gomes",
+                        "idade": 23,
+                        "matriculado": true,
+                        "disciplinas": [
+                            {
+                                "nome": "PRW1",
+                                "professor": "Tiago"
+                            },
+                            {
+                                "nome": "SO",
+                                "professor": "Luis"
+                            }
+                        ]
+                    }
+                ]
+
+        let nome = dados[1]["nome"]; // jeito 1
+        nome = dados[1].nome; // jeito 2 (nao pode espaco na chave do json)
+
+    </script>
+    
+</body>
+</html>

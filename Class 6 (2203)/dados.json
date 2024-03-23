@@ -1,0 +1,32 @@
+[
+    {
+        "nome": "José da Silva Emanuel",
+        "idade": 21,
+        "matriculado": true,
+        "disciplinas": [
+            {
+                "nome": "PRW1",
+                "professor": "Tiago"
+            },
+            {
+                "nome": "APR2",
+                "professor": "Carlao"
+            }
+        ]
+    },
+    {
+        "nome": "Maria da Silva Gomes",
+        "idade": 23,
+        "matriculado": true,
+        "disciplinas": [
+            {
+                "nome": "PRW1",
+                "professor": "Tiago"
+            },
+            {
+                "nome": "SO",
+                "professor": "Luis"
+            }
+        ]
+    }
+]
