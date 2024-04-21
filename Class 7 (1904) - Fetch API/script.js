@@ -1,5 +1,10 @@
-function checar_digitos(cepNumber){
-    const cepString = cepNumber.toString();
+function checar_digitos(cepNumber, has_zero){
+    let cepString = cepNumber.toString();
+    if(has_zero){
+        const add_zero = "0";
+        cepString = add_zero + cepString;
+    }
+
     if(cepString.length != 8){
         return false;
     }
@@ -7,9 +12,11 @@ function checar_digitos(cepNumber){
 }
 
 function analisar(){
-    const cep = document.getElementById("cep").value;
+    let cep = document.getElementById("cep").value;
+    cep = cep.replace(/[-\s]/g, '');
+    const has_zero = cep.startsWith("0");
     const cepNumber = parseInt(cep, 10);
-    const digitos = checar_digitos(cepNumber);
+    const digitos = checar_digitos(cepNumber, has_zero);
     const exibicao = document.getElementById("informacoes");
 
     if(cep === ""){
